@@ -30,7 +30,7 @@ form {
     .input {
         @include style-input-button;
 
-        margin-bottom: 24px;
+        margin-bottom: 40px;
         position: relative;
 
         input {
@@ -61,15 +61,21 @@ form {
         }
         
         span.error {
-            padding: 0;
-            display: flex;
+            padding: 0px;
+            width: 100%;
+            text-align: center;
 
-            background-color: $bg-color-error;
+            position: absolute;
+            top: 48px;
+            left: 0;            
         }
 
         span.error.active {
+            padding: 2px;
+            margin: 4px 0;
+
+            background-color: $bg-color-error;
             border: 1px solid red;
-            padding: 6px;
         }        
     }
 
